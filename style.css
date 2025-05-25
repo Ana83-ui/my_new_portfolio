@@ -1,0 +1,441 @@
+/* RESET BÁSICO */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+a {
+  text-decoration: none;
+}
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --duration: 30s;
+  --delay: 0s;
+  --iteration-count: infinite;
+}
+
+
+/* HEADER */
+.navigare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  background-color: #000;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.logotipo {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.7;
+}
+
+.logotipo .name {
+  margin-top: 0.9375rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.logotipo .job {
+  margin-inline-start: 6.875rem;
+}
+
+.surname {
+  color: #ffff00;
+}
+
+.nav-item {
+  display: flex;
+  gap: 1.875rem;
+  margin: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  transform: scale(1.2);
+  color: #ffff00;
+}
+
+/* WRAPPER Y PRESENTACIÓN */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #000;
+  max-height: 60.625rem;
+}
+
+.up {
+position: sticky;
+  bottom: 20px;
+  right: 20px;
+  width: 10px;
+  height: auto;
+  z-index: 10;
+  cursor: pointer;
+    border-radius: 20%;
+    margin-top: 19px;
+}
+
+.me-img {
+  max-height: 60.625rem;
+}
+
+.presentation {
+  margin: 200px 70px;
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  font-weight: bold;
+  animation: presentation-left 3s ease-in-out;
+  line-height: 7.5rem;
+  letter-spacing: 1.25rem;
+}
+
+@keyframes presentation-left {
+  to {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+/* SECTION: ABOUT ME */
+.container {
+  width: 100%;
+  max-width: 81.25rem;
+  margin-inline: auto;
+}
+
+.about-me {
+  color: #000;
+}
+
+.text-about-me {
+  width: 90%;
+  max-width: 43.75rem;
+  text-align: center;
+  margin: auto;
+}
+
+.img-me {
+  width: 18.75rem;
+  margin-inline: auto;
+  margin-bottom: 3.75rem;
+}
+
+.title-about-me {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #000;
+  margin: 60px auto;
+  text-align: center;
+}
+
+
+
+/* SECTION: SKILLS */
+.skills-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding-inline: 1.25rem;
+}
+
+.skills {
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.875rem;
+  color: #000;
+}
+
+.skill-icon {
+  width: 8.125rem;
+  height: 3.125rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* SECTION: PROJECTS */
+.my-projects {
+  background: #f7f7f7;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 3.125rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* para indicar interactividad */
+  outline: none; /* quitar outline por defecto */
+}
+
+/* Para que .card reciba foco (añadir tabindex="0" en HTML) */
+.card:focus {
+  outline: 2px solid #ffff00; /* foco visible accesible */
+}
+
+/* Imagen en card */
+.card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Escalar imagen con hover o focus */
+.card:hover img,
+.card:focus-within img {
+  transform: scale(1.5);
+}
+
+/* Comentario que aparece sobre la imagen */
+.comment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  border: 1px solid #ffff00;
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  justify-content: center;
+  align-items: center;
+  color: #080707;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
+}
+
+/* Mostrar comentario con hover o foco */
+.card:hover .comment,
+.card:focus-within .comment {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.projects{
+  margin-inline-start: 25px;
+}
+
+/* Botón */
+.btn {
+  width: 6.25rem;
+  border: 1px solid #ffff00;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ffff00;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  /* padding: 1.25rem; */
+}
+
+.contact-icon,
+.gmail {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+
+.icons-rrss {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+  margin: 1.25rem;
+}
+
+.derechos {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.rrss {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+
+/* MÓVILES */
+@media (max-width: 480px) {
+  .nav-item {
+    gap: 0.625rem;
+    margin: 0.625rem;
+  }
+
+  .presentation {
+    margin: 1.875rem;
+    font-size: 2.1875rem;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+  }
+
+  .img-me {
+    margin: 0 auto 3.75rem;
+  }
+
+  .text-about-me {
+    width: 90%;
+    margin: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  .skills-wrapper {
+    margin-inline: 0;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto 3.125rem;
+  }
+
+  .card img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  /* Escalar imagen y mostrar comentario con hover o focus en móvil */
+  .card:hover img,
+  .card:focus-within img {
+    transform: scale(1.5);
+  }
+
+  .card:hover .comment,
+  .card:focus-within .comment {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .icons-rrss {
+    gap: 0.625rem;
+  }
+
+  .gmail {
+    height: 1.5625rem;
+  }
+
+  .derechos {
+    font-size: 0.625rem;
+  }
+
+  .rrss {
+    justify-content: space-evenly;
+  }
+
+  .me-img {
+    margin-top: 3.4375rem;
+  }
+
+  .logotipo .job {
+    margin-inline-start: 2.8125rem;
+  }
+}
+
+
+
+
+/* TABLETS Y MEDIANAS */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .presentation {
+    margin: 1.25rem 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    font-size: 3.125rem;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img-me {
+    margin-inline-start: 33%;
+  }
+
+  .project {
+    margin-inline: auto;
+  }
+
+  .rrss {
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    gap: 1.25rem;
+  }
+
+  .logotipo .job {
+    margin-inline-start: 6.875rem;
+  }
+}
+
+/* DESKTOPS GRANDES */
+@media (min-width: 1025px) {
+  .presentation {
+    font-size: 3.75rem;
+    /* line-height: 120px; */
+    letter-spacing: 0px;
+    margin: 100px 70px;
+  }
+
+  .card {
+    max-width: 25rem;
+  }
+}
