@@ -180,6 +180,7 @@ position: sticky;
 .skill-icon {
   width: 8.125rem;
   height: 3.125rem;
+  object-fit: contain;
 }
 
 @keyframes scroll {
