@@ -206,8 +206,8 @@ position: sticky;
 
 .card {
   width: 100%;
+  height: 450px;
   max-width: 25rem;
-  margin-bottom: 3.125rem;
   position: relative;
   overflow: hidden;
   cursor: pointer; /* para indicar interactividad */
@@ -236,8 +236,8 @@ position: sticky;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  height: 450px;
   background-color: #f7f7f7;
   border: 1px solid #ffff00;
   display: grid;
@@ -307,6 +307,38 @@ footer {
   justify-content: space-between;
 }
 
+.card-slider {
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* para indicar interactividad */
+  outline: none; /* quitar outline por defecto */
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.slider-container img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  object-fit: cover;
+}
+.slider-item{
+  width: 100px;
+
+}
+.slider-item-other{
+  width: 100px;
+  height: 250px;
+}
+.slider-item-first{
+  width: 400px;
+  height: 430px;
+}
 /* MEDIA QUERIES */
 
 /* MÓVILES */
@@ -337,7 +369,6 @@ footer {
     flex-direction: column;
 
   }
-
 
   .skills-wrapper {
     margin-inline: 0;
@@ -440,3 +471,93 @@ footer {
     max-width: 25rem;
   }
 }
+
+
+
+
+/* aseguramos parent relativo para posicionar label dentro del slider */
+.project-card {
+  position: relative;
+  height: 650px;
+}
+
+/* ocultar checkbox */
+.info-toggle {
+  display: none;
+}
+
+/* botón +Info (label) — está dentro del slider visualmente */
+.info-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  background: #fff;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #ffff00;
+}
+
+
+
+.info-btn:hover {
+  cursor: pointer;
+  background-color: #ffff00;
+}
+/* si tu .card-slider ya tiene position:relative, mantiene la label dentro del area visual */
+/* panel oculto por defecto */
+.info-panel {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: .28s ease;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ffff00;
+  color: #000;
+  width: 100%;  /* ocupa todo el ancho de .project-card */
+  box-sizing: border-box;
+  max-height: 200px; /* ajusta según necesites */
+  overflow-y: auto;
+
+}
+
+
+/* SHOW: cuando checkbox esté checked (input y panel son hermanos) */
+.info-toggle:checked ~ .info-panel {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* panel oculto por defecto para slider */
+.info-panel-slider {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: .28s ease;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ffff00;
+  color: #000;
+  width: 400px;       /* solo el slider */
+  max-width: 100%;    /* responsivo en móviles */
+  margin: 10px auto; 
+  box-sizing: border-box;
+  max-height: 400px;   /* altura máxima opcional */
+  overflow-y: auto;
+margin-bottom: 50px;
+}
+
+/* mostrar panel cuando el checkbox está activo */
+.info-toggle:checked ~ .info-panel-slider {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
