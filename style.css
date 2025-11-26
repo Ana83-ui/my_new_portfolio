@@ -340,140 +340,20 @@ footer {
   width: 400px;
   height: 430px;
 }
-/* MEDIA QUERIES */
 
-/* MÓVILES */
-@media (max-width: 480px) {
-  .nav-item {
-    gap: 0.625rem;
-    margin: 0.625rem;
-  }
+.title_blog{
+  display: flex; 
+  gap: 30px;
+ }
 
-  .presentation {
-    margin: 1.875rem;
-    font-size: 2.1875rem;
-    line-height: 3.125rem;
-    letter-spacing: 0;
-  }
 
-  .img-me {
-    margin: 0 auto 3.75rem;
-  }
-
-  .text-about-me {
-    width: 90%;
-    margin: auto;
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .skills-wrapper {
-    margin-inline: 0;
-  }
-
-  .card {
-    width: 90%;
-    margin: 0 auto 3.125rem;
-  }
-
-  .card img {
-    width: 100%;
-    transition: transform 0.3s ease;
-  }
-
-  /* Escalar imagen y mostrar comentario con hover o focus en móvil */
-  .card:hover img,
-  .card:focus-within img {
-    transform: scale(1.5);
-  }
-
-  .card:hover .comment,
-  .card:focus-within .comment {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .icons-rrss {
-    gap: 0.625rem;
-  }
-
-  .gmail {
-    height: 1.5625rem;
-  }
-
-  .derechos {
-    font-size: 0.625rem;
-  }
-
-  .rrss {
-    justify-content: space-evenly;
-  }
-
-  .me-img {
-    margin-top: 3.4375rem;
-  }
-
-  .logotipo .job {
-    margin-inline-start: 2.8125rem;
-  }
+.img_newsletter{
+  width: 700px; position: absolute; margin-top: -45px; margin-inline-start: 25px;
 }
 
-
-
-
-/* TABLETS Y MEDIANAS */
-@media (min-width: 481px) and (max-width: 1024px) {
-  .presentation {
-    margin: 1.25rem 2.5rem;
-    line-height: 3.125rem;
-    letter-spacing: 0;
-    font-size: 3.125rem;
-  }
-
-  .wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .img-me {
-    margin-inline-start: 33%;
-  }
-
-  .project {
-    margin-inline: auto;
-  }
-
-  .rrss {
-    justify-content: space-around;
-  }
-
-  .nav-item {
-    gap: 1.25rem;
-  }
-
-  .logotipo .job {
-    margin-inline-start: 6.875rem;
-  }
+.p_newsletter{
+  width: 500px; margin-inline-start: 30px;
 }
-
-/* DESKTOPS GRANDES */
-@media (min-width: 1025px) {
-  .presentation {
-    font-size: 3.75rem;
-    /* line-height: 120px; */
-    letter-spacing: 0px;
-    margin: 100px 70px;
-  }
-
-  .card {
-    max-width: 25rem;
-  }
-}
-
-
 
 
 /* aseguramos parent relativo para posicionar label dentro del slider */
@@ -576,11 +456,11 @@ margin-bottom: 50px;
   gap: 40px;
   min-height: 566.5px;
   margin-top: 50px;
-  h1{
-    margin-top: 40px;
-   
-  }
+}
 
+.title_newsletter{
+    margin-top: 40px;
+    margin-inline-start: 30px;
 }
 
 .btn-blog {
@@ -637,3 +517,212 @@ margin-bottom: 50px;
 .btn-volver:hover::after {
   opacity: 1;
 }
+
+
+
+.charter{
+  width: 1300px; height: 300px; border: 1px solid #f0e9e9
+}
+
+
+/* MEDIA QUERIES */
+
+/* MÓVILES */
+@media (max-width: 480px) {
+  .nav-item {
+    gap: 0.625rem;
+    margin: 0.625rem;
+  }
+
+  .presentation {
+    margin: 1.875rem;
+    font-size: 2.1875rem;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+  }
+
+  .img-me {
+    margin: 0 auto 3.75rem;
+  }
+
+  .text-about-me {
+    width: 90%;
+    margin: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .skills-wrapper {
+    margin-inline: 0;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto 3.125rem;
+  }
+
+  .card img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  /* Escalar imagen y mostrar comentario con hover o focus en móvil */
+  .card:hover img,
+  .card:focus-within img {
+    transform: scale(1.5);
+  }
+
+  .card:hover .comment,
+  .card:focus-within .comment {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .icons-rrss {
+    gap: 0.625rem;
+  }
+
+  .gmail {
+    height: 1.5625rem;
+  }
+
+  .derechos {
+    font-size: 0.625rem;
+  }
+
+  .rrss {
+    justify-content: space-evenly;
+  }
+
+  .me-img {
+    margin-top: 3.4375rem;
+  }
+
+  .logotipo .job {
+    margin-inline-start: 2.8125rem;
+  }
+ .charter{
+
+  width: 300px !important;
+  height: 550px !important;
+ }  
+  .p_newsletter{
+    width: 250px !important;
+  }
+ .img_newsletter{
+    position: relative;
+    margin-top: -30px;
+    margin-inline-start: 20px;
+    width: 150px !important;
+  }
+  .title_newsletter{
+    margin-inline-start: 30px;
+    margin-top: 80px !important;
+  }
+  .title_blog{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .btn-volver{
+
+ width: 40px;
+
+
+  }
+.card-slider{
+  width: 350px;
+}
+.info-panel{
+  width: 350px;
+}
+.rrss{
+  width: 350px;
+}
+}
+
+/* TABLETS Y MEDIANAS */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .presentation {
+    margin: 1.25rem 2.5rem;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    font-size: 3.125rem;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img-me {
+    margin-inline-start: 33%;
+  }
+
+  .project {
+    margin-inline: auto;
+  }
+
+  .rrss {
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    gap: 1.25rem;
+  }
+
+  .logotipo .job {
+    margin-inline-start: 6.875rem;
+  }
+
+  .title_blog{
+    display: flex;
+    flex-direction: column;
+  }
+  .charter{
+    width: 425px;
+    height: 400px;
+  }
+  .img_newsletter{
+    position: relative;
+  }
+  .p_newsletter{
+    width: 390px;
+  }
+}
+
+/* DESKTOPS GRANDES */
+@media (min-width: 1025px) {
+  .presentation {
+    font-size: 3.75rem;
+    /* line-height: 120px; */
+    letter-spacing: 0px;
+    margin: 100px 70px;
+  }
+
+  .card {
+    max-width: 25rem;
+  }
+
+
+  .img_newsletter{
+    position: relative;
+  }
+  .charter{
+    width: 960px;
+    height: 380px;
+  }
+  .title_newsletter 
+  {
+    width: 400px; 
+  }
+   .p_newsletter{
+    width: 400px; 
+  }
+}
+
+
+
