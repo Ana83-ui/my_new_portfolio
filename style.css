@@ -39,6 +39,7 @@ a {
   --duration: 30s;
   --delay: 0s;
   --iteration-count: infinite;
+
 }
 
 
@@ -561,3 +562,78 @@ margin-bottom: 50px;
   transform: translateY(0);
 }
 
+
+
+.blog{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 400px;
+}
+.blog_title{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 40px;
+  min-height: 566.5px;
+  margin-top: 50px;
+  h1{
+    margin-top: 40px;
+   
+  }
+
+}
+
+.btn-blog {
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  background: #fff;
+  color: #000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #ffff00;
+}
+
+
+
+.btn-blog:hover {
+  cursor: pointer;
+  background-color: #ffff00;
+}
+
+.info {
+  display: none;
+}
+
+.info-toggle:checked ~ .info {
+  display: block;
+}
+
+.btn-volver {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-volver::after {
+  content: "Volver";
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+  background: #ffff00;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity .2s ease-in-out;
+}
+
+/* Al pasar el ratón, aparece el texto */
+.btn-volver:hover::after {
+  opacity: 1;
+}
