@@ -8,14 +8,11 @@
   <body>
     <header id="top_bis" style="color: #000; margin: 71.1px">
       <div style="display: flex; justify-content: space-between">
-        <div class="title_blog">
+        <div class="title_blog" style="display: flex; gap: 25px;">
           <h1 style="font-size: 40px">Flowlytics: desde cero</h1>
           <div></div>
           <span style="margin-top: 20px; font-weight: bold">| </span>
-          <h3 style="margin-top: 17px">
-            Cada semana, un vistazo detrás de cámaras: decisiones, errores y
-            logros.
-          </h3>
+          <h3 style="margin-top: 17px"> Cada semana, un vistazo detrás de cámaras: decisiones, errores y logros. </h3>
         </div>
 
         <a href="./index.html" style="margin-top: 10px" class="btn-volver"
@@ -26,15 +23,16 @@
       </div>
     </header>
     <main class="blog">
+      <!--newsletter1-->
       <div style="color: #000">
         <input type="checkbox" id="newsletter1" class="info-toggle" />
         <div class="blog_title">
           <div class="charter">
             <h1 class="title_newsletter">Sentando las bases del proyecto</h1>
             <p class="p_newsletter">
-              El desarrollo de Flowlytics ha comenzado oficialmente, y esta primera semana ha estado dedicada a uno de los momentos más importantes en cualquier proyecto: la preparación. Antes de
-              escribir una sola línea de código funcional, era esencial establecer una base sólida que garantizara escalabilidad, orden y coherencia a largo plazo. Pulsa en "Leer Más" para ver en detalle
-              el trabajo realizado durante estos primeros días.
+              El desarrollo de Flowlytics ha comenzado oficialmente, y esta primera semana ha estado dedicada a uno de los momentos más
+              importantes en cualquier proyecto: la preparación. Antes de escribir una sola línea de código funcional, era esencial
+              establecer una base sólida que garantizara escalabilidad, orden y coherencia a largo plazo. Pulsa en "Leer Más" para ver en detalle el trabajo realizado durante estos primeros días.
             </p>
             <label style="margin: 30px" for="newsletter1" class="btn-blog" >Leer Más</label >
           </div>
@@ -47,11 +45,11 @@
             <h3>Estructura inicial del proyecto y repositorios.</h3>
             <br />
             <p>
-              Una de las primeras decisiones ha sido crear dos repositorios independientes en GitHub: uno para el frontend y otro para el backend. Esta separación responde a varios motivos prácticos:
-              Permite un control de versiones más limpio. Facilita despliegues independientes según necesidades. Mejora la modularidad del proyecto. Posibilita que, en el futuro, cada parte pueda
-              evolucionar por separado o incluso integrarse con otros servicios.  Esta estructura favorece un desarrollo más profesional y flexible, especialmente para proyectos que tienen potencial de crecer o
-              incorporar nuevas tecnologías. Para ilustrar la estructura  inicial, se ha elaborado un diagrama en Excalidraw, que muestra cómo interactúan los distintos componentes del proyecto: frontend,
-              backend y base de datos, además de los flujos principales de datos.
+              Una de las primeras decisiones ha sido crear dos repositorios
+              independientes en GitHub: uno para el frontend y otro para el backend. Esta separación responde a varios motivos prácticos: Permite un control de versiones más limpio. Facilita despliegues
+              independientes según necesidades. Mejora la modularidad del proyecto. Posibilita que, en el futuro, cada parte pueda  evolucionar por separado o incluso integrarse con otros servicios.
+              Esta estructura favorece un desarrollo más profesional y flexible, especialmente para proyectos que tienen potencial de crecer o incorporar nuevas tecnologías. Para ilustrar la estructura
+              inicial, se ha elaborado un diagrama en Excalidraw, que muestra cómo interactúan los distintos componentes del proyecto: frontend, backend y base de datos, además de los flujos principales de datos.
             </p>
           </div>
           <br />
@@ -61,10 +59,10 @@
             <br />
             <p>
               La elección del stack es clave, y Flowlytics necesita fluidez, velocidad y capacidad de adaptación. Finalmente, el stack definido para esta primera versión es: Frontend: React + CSS. Elegido por
-              su capacidad de construir interfaces dinámicas, por la modularidad de sus componentes y por su comunidad madura. Backend: Node.js + Express. Una combinación ligera, eficiente y versátil. Ideal para
-              crear APIs rápidas y para manejar flujos de datos como los que Flowlytics procesará. Base de datos: MongoDB. Su flexibilidad en la gestión de documentos lo convierte en un gran aliado,
-              especialmente para proyectos donde la estructura de datos puede evolucionar. Este conjunto tecnológico permitirá una construcción ágil y escalable, manteniendo un equilibrio entre simplicidad y
-              potencia.
+              su capacidad de construir interfaces dinámicas, por la modularidad de sus componentes y por su comunidad madura. Backend: Node.js +
+              Express. Una combinación ligera, eficiente y versátil. Ideal para crear APIs rápidas y para manejar flujos de datos como los que Flowlytics procesará. Base de datos: MongoDB. Su flexibilidad en
+              la gestión de documentos lo convierte en un gran aliado, especialmente para proyectos donde la estructura de datos puede evolucionar. Este conjunto tecnológico permitirá una construcción
+              ágil y escalable, manteniendo un equilibrio entre simplicidad y potencia.
             </p>
           </div>
           <br /><br />
@@ -82,7 +80,7 @@
             <br />
             <p>
               Para garantizar un desarrollo ágil y bien estructurado, esta semana también se ha avanzado en la organización interna del proyecto. He utilizado Trello como tablero central del proyecto,
-              donde se han definido: Listas de tareas por fases Prioridades Roadmap inicial Fechas estimadas de cada módulo Con Trello, el avance queda perfectamente organizado y medible, lo que facilita
+              donde se han definido: Listas de tareas por fases Prioridades Roadmap inicial Fechas estimadas de cada módulo Con Trello, el  avance queda perfectamente organizado y medible, lo que facilita
               mantener el proyecto en movimiento sin perder foco.
             </p>
           </div>
@@ -98,21 +96,20 @@
         </div>
         <br />
       </div>
-
+      <!--newsletter2-->
       <div style="color: #000">
         <input type="checkbox" id="newsletter2" class="info-toggle" />
         <div class="blog_title">
           <div class="charter">
             <h1 class="title_newsletter">Autenticación y seguridad</h1>
             <p class="p_newsletter">
-              Esta semana en Flowlytics se ha dado un paso clave: permitir el acceso a la aplicación de manera segura y fluida. La autenticación es la base para cualquier SaaS, 
-              y el objetivo era construirla de forma robusta y moderna.
+              Esta semana en Flowlytics se ha dado un paso clave: permitir el acceso a la aplicación de manera segura y fluida. La autenticación
+              es la base para cualquier SaaS, y el objetivo era construirla de forma robusta y moderna.
             </p>
             <label style="margin: 30px" for="newsletter2" class="btn-blog" >Leer Más</label >
           </div>
           <div style="height: 300px">
-            <img class="img_newsletter" src="./images/blog/newsletter2.png" alt="" style="height: 410px;
-  width: 600px;"/>
+            <img class="newsletter-icon"  src="./images/blog/newsletter2.png" alt="" style="height: 410px; width: 600px" />
           </div>
         </div>
         <div class="info">
@@ -132,20 +129,19 @@
           <div>
             <h3>Pantallas de autenticación.</h3>
             <br />
-            <p> Se crearon las interfaces principales para interactuar con el sistema:
-            </p>
+            <p> Se crearon las interfaces principales para interactuar con el sistema: </p>
             <br />
-            <p> <strong>Login →</strong> para entrar con email/contraseña o mediante Google </p>
+            <p>  <strong>Login →</strong> para entrar con email/contraseña o mediante Google </p>
             <p><strong>Registro →</strong> crear nueva cuenta de usuario</p>
-            <p> <strong>Reset password →</strong> recuperar contraseña fácilmente</p>
+            <p> <strong>Reset password →</strong> recuperar contraseña fácilmente </p>
             <br />
-            <p>  Además, si el usuario ya está registrado, se implementa login automático, haciendo la experiencia mucho más rápida y cómoda. </p>
+            <p>  Además, si el usuario ya está registrado, se implementa login  automático, haciendo la experiencia mucho más rápida y cómoda. </p>
           </div>
           <br /><br />
           <div>
             <h3>Conexión con la base de datos.</h3>
             <br />
-            <p> Todas las credenciales se almacenan de forma segura en la base de datos MongoDB, utilizando hashing de contraseñas y validaciones estrictas para garantizar integridad y privacidad.</p>
+            <p> Todas las credenciales se almacenan de forma segura en la base de datos MongoDB, utilizando hashing de contraseñas y validaciones estrictas para garantizar integridad y privacidad. </p>
           </div>
           <br /><br />
           <div>
@@ -178,61 +174,136 @@
         </div>
         <br />
       </div>
-
+      <!--newsletter3-->
       <div style="color: #000">
         <input type="checkbox" id="newsletter3" class="info-toggle" />
         <div class="blog_title">
           <div class="charter">
             <h1 class="title_newsletter">Construyendo la estructura base</h1>
-            <p class="p_newsletter">
-              En esta primera etapa del desarrollo de Flowlytics se ha dado un paso decisivo: la creación de la base visual y estructural que sostendrá todo el sistema en el futuro. 
-            </p>
+            <p class="p_newsletter">  En esta primera etapa del desarrollo de Flowlytics se ha dado un paso decisivo: la creación de la base visual y estructural que sostendrá todo el sistema en el futuro. </p>
             <label style="margin: 30px" for="newsletter3" class="btn-blog" >Leer Más</label >
           </div>
-          <div style="height: 500px; width: 540px;">
-            <img class="img_newsletter" src="./images/blog/newsletter3.png" alt=""  style="height: 380px; width: 425px;
-  margin-inline-start: 125px;"/>
+          <div style="height: 500px; width: 540px">
+            <img class="newsletter-icon" src="./images/blog/newsletter3.png" alt="" style="height: 350px; width: 425px; margin-inline-start: 125px" />
           </div>
         </div>
         <div class="info">
           <div>
-            <p>
-              Estas semanas iniciales han estado enfocadas en diseñar y construir los elementos fundamentales que permitirán, más adelante, incorporar funcionalidades reales sin perder coherencia ni estabilidad. El objetivo principal ha sido establecer una plataforma sólida, intuitiva y preparada para crecer de forma orgánica.
-            </p>
-            <br>
-            <br>
-            <p>La versión inicial ya se encuentra operativa y reúne varios componentes esenciales que marcan el inicio de la identidad visual y funcional de la plataforma:</p>
+            <p> Estas semanas iniciales han estado enfocadas en diseñar y  construir los elementos fundamentales que permitirán, más adelante, incorporar funcionalidades reales sin perder coherencia
+              ni estabilidad. El objetivo principal ha sido establecer una plataforma sólida, intuitiva y preparada para crecer de forma orgánica. </p>
             <br />
-        
+            <br />
+            <p> La versión inicial ya se encuentra operativa y reúne varios componentes esenciales que marcan el inicio de la identidad visual y funcional de la plataforma: </p>
+            <br />
             <ul>
-              <li><strong>Sidebar funcional:</strong> Se ha desarrollado un panel lateral que funcionará como el menú principal de navegación. Su estructura ya está completamente integrada en el flujo de la aplicación, permitiendo un acceso ordenado y consistente a las distintas secciones. Aunque los apartados actuales son provisionales, el diseño ya define cómo se organizará la experiencia del usuario a medida que la plataforma crezca.</li>
-              <br>
-              <li> <strong>Navbar superior: </strong> Se ha añadido una barra superior que servirá como punto central de interacciones cotidianas dentro de Flowlytics. Este elemento aportará estabilidad y facilitará la incorporación de futuras acciones esenciales, como notificaciones, accesos rápidos o configuraciones del usuario. </li>
-              <br>
-              <li> <strong>Vista inicial tras el acceso:</strong>  La página principal ya está diseñada y preparada para recibir información real. Esta vista, que será la primera impresión al iniciar sesión, busca transmitir claridad, jerarquía visual y un acceso inmediato a los datos más relevantes. Su diseño modular permitirá adaptar la información mostrada conforme la plataforma evolucione.</li>
-            
-            <br>
-              <li> <strong>Gráficos placeholder:</strong>  Se han creado los espacios destinados a las visualizaciones junto con su lógica base. Aunque actualmente muestran contenido ficticio, cumplen una función fundamental: establecer cómo se integrarán los gráficos reales en el futuro. La estructura ya está pensada para incorporar datos dinámicos y ofrecer una experiencia visual rica y comprensible.</li>
-          <br>
-          <li> <strong>Tarjetas métricas (KPIs):</strong>  Los componentes destinados a mostrar indicadores clave ya están maquetados e integrados en el dashboard. Por ahora presentan valores de ejemplo, pero servirán como referencia para la presentación de métricas reales más adelante. Su diseño resalta simplicidad, lectura rápida y relevancia visual.</li>  
-          </ul>
+              <li> <strong>Sidebar funcional:</strong> Se ha desarrollado un panel lateral que funcionará como el menú principal de navegación. Su estructura ya está completamente integrada en el flujo de la
+                aplicación, permitiendo un acceso ordenado y consistente a las distintas secciones. Aunque los apartados actuales son provisionales, el diseño ya define cómo se organizará la
+                experiencia del usuario a medida que la plataforma crezca.
+              </li>
+              <br />
+              <li> <strong>Navbar superior: </strong> Se ha añadido una barra superior que servirá como punto central de interacciones cotidianas dentro de Flowlytics. Este elemento aportará
+                estabilidad y facilitará la incorporación de futuras acciones esenciales, como notificaciones, accesos rápidos o configuraciones del usuario. </li>
+              <br />
+              <li> <strong>Vista inicial tras el acceso:</strong> La página principal ya está diseñada y preparada para recibir información real. Esta vista, que será la primera impresión al iniciar
+                sesión, busca transmitir claridad, jerarquía visual y un acceso inmediato a los datos más relevantes. Su diseño modular permitirá adaptar la información mostrada conforme la plataforma
+                evolucione.
+              </li>
+              <br />
+              <li> <strong>Gráficos placeholder:</strong> Se han creado los espacios destinados a las visualizaciones junto con su lógica base. Aunque actualmente muestran contenido ficticio, cumplen
+                una función fundamental: establecer cómo se integrarán los gráficos reales en el futuro. La estructura ya está pensada para incorporar datos dinámicos y ofrecer una experiencia visual rica
+                y comprensible.
+              </li>
+              <br />
+              <li> <strong>Tarjetas métricas (KPIs):</strong> Los componentes destinados a mostrar indicadores clave ya están maquetados e integrados en el dashboard. Por ahora presentan valores de
+                ejemplo, pero servirán como referencia para la presentación de métricas reales más adelante. Su diseño resalta simplicidad, lectura rápida y relevancia visual.
+              </li>
+            </ul>
           </div>
           <br />
           <br />
           <div>
-            <p>En conjunto, estos elementos permiten visualizar la dirección que tomará Flowlytics a nivel estético, funcional y estructural. La plataforma comienza a tomar forma y ya ofrece una idea clara del entorno en el que operarán las futuras herramientas y módulos.</p>
+            <p> En conjunto, estos elementos permiten visualizar la dirección que tomará Flowlytics a nivel estético, funcional y estructural. La  plataforma comienza a tomar forma y ya ofrece una idea clara del
+              entorno en el que operarán las futuras herramientas y módulos.
+            </p>
             <br />
           </div>
           <br />
-         
           <div>
-            <p>De cara a la próxima semana, el trabajo continuará centrado en el diseño y la ampliación de la interfaz. Se explorarán nuevos componentes, se pulirán detalles visuales y se avanzará en la cohesión del sistema, preparando el camino para etapas más complejas. Flowlytics recién comienza, y cada paso está construyendo una experiencia pensada para escalar y evolucionar.</p>
+            <p> De cara a la próxima semana, el trabajo continuará centrado en el diseño y la ampliación de la interfaz. Se explorarán nuevos componentes, se pulirán detalles visuales y se avanzará en la
+              cohesión del sistema, preparando el camino para etapas más complejas. Flowlytics recién comienza, y cada paso está construyendo una experiencia pensada para escalar y evolucionar.
+            </p>
           </div>
         </div>
         <br />
       </div>
+     <!--newsletter4-->
+      <div style="color: #000">
+        <input type="checkbox" id="newsletter4" class="info-toggle" />
+        <div class="blog_title">
+          <div class="charter">
+            <h1 class="title_newsletter">Finalización de la estructura base</h1>
+            <p class="p_newsletter"> Con la primera etapa de Flowlytics llegando a su fin, la plataforma ya cuenta con una estructura visual y funcional consolidada, lista para soportar el desarrollo de nuevas funcionalidades. </p>
+            <label style="margin: 30px" for="newsletter4" class="btn-blog">Leer Más</label >
+          </div>
+          <div style="height: 500px; width: 540px">
+            <img class="newsletter-icon" src="./images/blog/newsletter4.png"  alt="" style="height: 380px; width: 425px; margin-inline-start: 125px" />
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <p> En esta fase se ha procedido con un <em>walkthrough</em> completo, permitiendo recorrer por completo la plataforma para asegurar que
+              todos los elementos visuales y funcionales estén alineados y operativos, verificando consistencia, accesibilidad y preparación para la integración de datos reales. </p>
+            <br />
+            <br />
+            <p> Este recorrido inicial de la plataforma ha permitido definir no solo la estética, sino también la interactividad y el comportamiento de los elementos, asegurando que la experiencia del usuario sea coherente y fluida.</p>
+            <br />
+            <br />
+            <p>Entre los avances más destacados se incluyen:</p>
+            <br />
+            <ul>
+              <li> <strong>Interacción de botones y formularios:</strong> Todos los botones principales responden a acciones de usuario, y los formularios iniciales permiten la captura de datos de manera
+                estructurada. Esto sienta las bases para futuros flujos de trabajo, validaciones y procesamiento de información dentro de la plataforma. </li>
+              <br />
+              <li>
+                <strong>Consistencia visual y diseño coherente: </strong>
+                <ul>
+                  <br />
+                  <li> <strong>Tamaño, color, borde y tipografía: </strong> Todos los elementos se alinean con la guía de estilo de Flowlytics. </li>
+                  <li> <strong>Espaciado y alineación: </strong>Márgenes, padding y disposición de los elementos revisados para una interfaz limpia y ordenada. </li>
+                  <li> <strong>Transiciones</strong> suaves y consistentes con el resto de la interfaz, reforzando la sensación de fluidez. </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <strong>Optimización y mantenimiento:</strong>
+                <ul>
+                  <br />
+                  <li> <strong>Reutilización:</strong> Los botones y formularios se componentizan para mantener consistencia en futuras expansiones.  </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <strong>Interactividad y funcionalidad:</strong>
+                <ul>
+                  <br />
+                  <li>  <strong>Click / Acción:</strong> Todos los botones disparan la acción correcta </li>
+                </ul>
+              </li>
+              <br />
+            </ul>
+          </div>
+          <br />
+          <br />
+          <div>
+            <p> Con esta base visual y funcional ya estable, el siguiente objetivo será avanzar en el backend, comenzando con la creación del <strong>CRUD</strong> de una de las secciones principales. Este
+              paso permitirá que Flowlytics empiece a trabajar con información real, alimentando el dashboard y convirtiéndolo en una herramienta verdaderamente operativa. </p>
+          </div>
+        </div>
+        <br />
+      </div>
+
       <p style="text-align: center; color: #000">
-        <em> <strong >Únete a la newsletter y acompáñame en cada paso de esta aventura de desarrollo:</strong></em >
+        <em> <strong >Únete a la newsletter y acompáñame en cada paso de esta aventura de desarrollo:</strong ></em>
         <a href="http://bit.ly/43IoYdX" target="_blank"> Ir a newsletter</a>
       </p>
     </main>

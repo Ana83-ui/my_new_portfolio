@@ -184,6 +184,13 @@ position: sticky;
   object-fit: contain;
 }
 
+.newsletter-icon {
+  width: 8.125rem;
+  height: 3.125rem;
+  object-fit: contain;
+  margin-top: -150px;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(100%);
@@ -341,10 +348,6 @@ footer {
   height: 430px;
 }
 
-.title_blog{
-  display: flex; 
-  gap: 30px;
- }
 
 
 .img_newsletter{
@@ -521,9 +524,40 @@ margin-bottom: 50px;
 
 
 .charter{
-  width: 1300px; height: 300px; border: 1px solid #f0e9e9
+  width: 1300px; 
+  /* height: 300px;  */
+  border: 1px solid #f0e9e9
 }
 
+.text-service {
+  padding: 20px;
+}
+
+.servicio {
+  display: flex;
+  gap: 50px;
+  margin-inline-start: 100px;
+}
+.title-service {
+  color: #aeaead;
+  font-size: 2.8em;
+  line-height: 1.1;
+}
+
+.blog-service{
+  max-width: 1715px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 704.2px;
+}
+
+.services-intro{
+  margin-bottom: 50px;
+}
+
+.servicios-list{
+  margin-bottom: 50px;
+}
 
 /* MEDIA QUERIES */
 
@@ -643,6 +677,11 @@ margin-bottom: 50px;
 .rrss{
   width: 350px;
 }
+.servicio {
+  display: flex;
+  gap: 50px;
+  margin-inline-start: 0px;
+}
 }
 
 /* TABLETS Y MEDIANAS */
@@ -692,6 +731,11 @@ margin-bottom: 50px;
   .p_newsletter{
     width: 390px;
   }
+  .servicio {
+    display: flex;
+    gap: 50px;
+    margin-inline-start: 0px;
+  }
 }
 
 /* DESKTOPS GRANDES */
@@ -722,7 +766,10 @@ margin-bottom: 50px;
    .p_newsletter{
     width: 400px; 
   }
+  .servicio {
+    display: flex;
+    gap: 50px;
+    margin-inline-start: 50px;
+  }
 }
-
-
 
