@@ -178,6 +178,18 @@ position: sticky;
   color: #000;
 }
 
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-item p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
 .skill-icon {
   width: 8.125rem;
   height: 3.125rem;
@@ -741,7 +753,7 @@ margin-bottom: 50px;
 /* DESKTOPS GRANDES */
 @media (min-width: 1025px) {
   .presentation {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     /* line-height: 120px; */
     letter-spacing: 0px;
     margin: 100px 70px;
